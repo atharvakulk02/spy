@@ -8,11 +8,11 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Serve frontend static files
-app.use(express.static(path.join(__dirname, "../spyfall_frontend/build")));
+//app.use(express.static(path.join(__dirname, "../spyfall_frontend/build")));
 
-app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "../spyfall_frontend/build", "index.html"));
-});
+//app.get("*", (req, res) => {
+   // res.sendFile(path.join(__dirname, "../spyfall_frontend/build", "index.html"));
+//});
 
 // Create an HTTP server and attach WebSocket to it
 const server = http.createServer(app);
