@@ -4,7 +4,7 @@ import Roomselection from "./components/Roomselection";
 import Lobby from "./components/Lobby";
 import Game from "./components/Game";
 
-const WS_URL = "ws://localhost:5000"; // Update for deployment
+const WS_URL = "https://spy-hmvs.onrender.com"; // Update for deployment
 
 function App() {
     const { sendMessage, lastMessage } = useWebSocket(WS_URL, { share: true });
